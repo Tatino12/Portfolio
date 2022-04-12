@@ -6,10 +6,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
 </head>
 <body>
 
-  
+  <div class="wrapper">
+    <header>
+     <nav id="home" class="navbar">
+      <div class="brand">
+        <h2>M<span>H</span></h2>
+    </div>
+    <ul class="menu">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#aboutme">About me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+ </header>
+
+ <main class="main">
+  <div class="info-content">
+  <h1>I´m <span>Mariano</span> Huecke</h1>
+  <p>I am a full stack web developer, I studied at the Henry Academy in Argentina, I have done some projects to be able to finish the academy and show the world everything I learned!</p>
+  <a download href="./img/HueckeMarianoCV.pdf">
+    <button class="download-cv">Download CV</button>
+  </a>
+  </div>
+  <img src="./img/Copia_de_WhatsApp_Image_2022-01-25_at_15.59.21-removebg.png" alt="Mariano Huecke picture">
+  </main>
+</div>
+
+
+<div id="aboutme" class="about">
+  <img src="./img/IMG_2268.png" alt="Mariano img">
+<div class="about-info">
+  <h2>About me</h2>
+  <div class="divider"></div>
+  <p>Hello! I am from Argentina, I am 32 years old and I am from Rio Gallegos, Santa Cruz. In addition to being a full stack web developer, I am a public accountant.
+    I have finished my studies in May 2016 as a public accountant and in March 2022 I have finished the developer career.
+    I am a fan of cryptocurrencies, currently I am studying solidity which is an object oriented programming language to write smart contracts.</p>
+  <p>My main hobbies are: playing soccer with friends 2 or 3 times a week, going fishing, camping, I love the outdoors, nature, mountains, lakes, snow! I love cold!</p>
+    <p id="aboutmore" class="abt-more">I am fascinated by traveling around the world, I have known many countries (Aruba, Brazil, Chile, Uruguay, Ecuador, Mexico, the United States, some Caribbean islands, Spain, Switzerland, Norway, Germany, Sweden), I have lived in different places ( In Argentina: Rio Gallegos, Buenos Aires, San Carlos de Bariloche, in Denmark: Aaalborg)</p>
+    <button onclick="handlebutton()" class="read-more">Read More</button>
+   </div>
+  </div>
+
+  <div id="portfolio" class="portfolio">
+    <div class="portfolio-headings">
+      <h2>My Portfolio</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card__img">
+        </div>
+        <div class="card__title">
+          <h2>Proyect Description</h2>
+        </div>
+        <div class="card_proyects_links">
+          <a href="https://github.com/Tatino12/HumbleFood-back-end" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://humblefood.vercel.app/" target="_blank">
+            <i class="fa-solid fa-earth-americas"></i>
+          </a>
+          
+        </div>
+        <div class="proyect-details-content">
+          <button class="proyect-details download-cv">
+            <a href="https://www.youtube.com/watch?v=4rQnOkwxL4Q" target="_blank">
+              Proyect details
+            </a>   
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image">
+        </div>
+        <div class="card__title">
+          <h2>Proyect Description</h2>
+        </div>
+        <div class="card_proyects_links">
+          <a href="https://github.com/Tatino12/PI-Pokemon-main" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://pi-pokemon-main-black.vercel.app" target="_blank">
+            <i class="fa-solid fa-earth-americas"></i>
+          </a>
+        
+        </div>
+        <div class="proyect-details-content">
+          <button class="proyect-details download-cv">
+            <a href="https://youtu.be/T1tHcgLAZXk" target="_blank">
+              Proyect details
+            </a>   
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="contact" class="contact-section">
+    <div class="contact-headings">
+      <h2>Keep in touch</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="container-contact">
+      <img src="./img/pixlr-bg-result.png" alt="mariano opacidad">
+      <div class="contact-form">
+        <h4>Send me a message...</h4>
+        <form action="https://formspree.io/f/mdobwgwq" method="POST" class="form">
+          <input type="text" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+          <textarea type="email" name="message" placeholder="Write your message here...">
+          </textarea>
+          <button type="submit" class="btn-submit" >Send message</button>
+        </form>
+      </div>
+    </div>
+    <a href="#home"><img class="up" src="./img/216098_thick_up_arrow_icon.png" alt="up picture"></a>
+  </div>
+
+<footer class="footer">
+<div class="footer-content">
+  <h2>Mariano Huecke</h2>
+  <h5>Full Stack Web Developer</h5>
+</div>
+<div class="social-network">
+  <a href="https://www.linkedin.com/in/marianohuecke/" target="_blank">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+  <a href="https://github.com/Tatino12" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://twitter.com/CryptoTuru" target="_blank">
+    <i class="fa-brands fa-twitter"></i>
+  </a>
+</div>
+</footer>
+
+<script>
+  function handlebutton(){
+    document.getElementById("aboutmore").classList.toggle("abt-more")
+   
+  }
+</script>
+
 </body>
 </html>
+
