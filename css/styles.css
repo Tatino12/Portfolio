@@ -212,6 +212,13 @@ font-size: 2.5em;
   background-size: cover;
   background-position: center;
 }
+.card__img2{
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/Waves.png);
+  background-size: cover;
+  background-position: center;
+}
 
 .card__title {
   padding: 20px;
