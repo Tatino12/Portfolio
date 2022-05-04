@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 html,
 body {
@@ -13,11 +14,10 @@ body {
 body {
   font-family: 'Roboto Mono', monospace;
   overflow-x: hidden;
-  
 }
 
 .wrapper {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: #191c19;
   color: #fff;
@@ -36,7 +36,9 @@ padding: 2em;
 .brand span{
 color: aqua;
 }
-
+.buttonmenu{
+  display: none;
+}
 .menu {
 display: flex;
 width: 50vw;
@@ -379,3 +381,214 @@ font-size: 3em;
   margin-top: 1em;
 }
 
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100vw;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 90px;
+  }
+  .buttonmenu{
+    display: inline-block;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.9);
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+    
+  }
+  .menu.showmenu {
+    transform: translateX(-20px);
+  }
+  .menu li {
+    margin-bottom: 10px;
+  }
+ 
+  .main { 
+    margin: 0 auto;
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    
+  }
+  .main p {
+    width: 90%;
+    margin-left: 30px;
+  }
+  .main h1{
+    margin-left: 30px;
+  }
+  .main img {
+  width: 100%;
+  border: 7px solid aqua;
+  height: 90%;
+  margin-top: 20px;
+  }
+  .download-cv {
+    margin-left: 30px;
+    
+  }
+
+
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    
+  }
+  .about img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-info {
+    margin-left: 0px;
+  }
+  
+  .about p {
+    margin-bottom: 1em;
+  }
+  
+  .read-more{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+  }
+  
+  .read-more:hover {
+    background-color: rgb(10, 104, 245);
+    box-shadow: none;
+  }
+
+
+
+  .portfolio {
+    width: 100%;
+    height: 100%;
+    
+  }
+  .portfolio-headings {
+    width: 100vw;
+    padding: 2.5em;
+  }
+  .portfolio .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+    height: 60vh;
+  }
+  
+
+
+
+
+.contact-section {
+  width: 100vw;
+  position: relative;
+}
+
+.contact-headings {
+  width: 100vw;
+  padding: 1.5em;
+}
+
+.contact-headings h2{
+font-size: 2.5em;
+}
+.container-contact {
+  width: 80vw;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-contact img {
+  width: 80%;
+  height: 60%;
+  bottom: 0px;
+  margin-right: 5px;
+  margin-top: 20px;
+  
+}
+
+.contact-form h4{
+  font-size: 1.5em;
+  margin-top: 10px;
+} 
+.up {
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2em;
+}
+
+
+
+
+.footer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 200px;
+background-color: aqua;
+}
+
+.footer h2 {
+font-size: 2.5em;
+}
+
+.footer h5,
+.social-network i  {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-network {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+}

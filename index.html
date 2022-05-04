@@ -22,6 +22,9 @@
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="buttonmenu" >
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
  </header>
 
@@ -60,7 +63,7 @@
 
     <div class="container">
       <div class="card">
-        <div class="card__img">
+        <div class="card__img" >
         </div>
         <div class="card__title">
           <h2>Proyect Description</h2>
@@ -198,8 +201,10 @@
 <script>
   function handlebutton(){
     document.getElementById("aboutmore").classList.toggle("abt-more")
-   
   }
+  document.querySelector('.buttonmenu').addEventListener("click", () => {
+    document.querySelector('.menu').classList.toggle('showmenu');
+  });
 </script>
 
 </body>
