@@ -226,6 +226,14 @@ font-size: 2.5em;
   background-size: contain;
   background-position: center;
 }
+.card__img3{
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/Captura\ de\ Pantalla\ 2022-05-09\ a\ la\(s\)\ 17.28.00.png);
+  background-repeat: no-repeat;   
+  background-size: contain;
+  background-position: center;
+}
 
 .card__title {
   padding: 20px;
