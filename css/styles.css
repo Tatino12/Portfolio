@@ -187,6 +187,7 @@ font-size: 2.5em;
 }
 
 .card {
+  
   width: 385px;
   color: #fff;
   height: 450px;
@@ -230,6 +231,15 @@ font-size: 2.5em;
   width: 100%;
   height: 250px;
   background-image: url(../img/Captura\ de\ Pantalla\ 2022-05-09\ a\ la\(s\)\ 17.28.00.png);
+  background-repeat: no-repeat;   
+  background-size: contain;
+  background-position: center;
+}
+
+.card__img4 {
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/nftgame.png);
   background-repeat: no-repeat;   
   background-size: contain;
   background-position: center;
