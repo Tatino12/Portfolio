@@ -267,8 +267,8 @@ justify-content: space-evenly;
 
 .card .proyect-details {
   margin: 0 auto;
-  margin: 1em;
-  width: 70%;
+  margin-bottom: 0.5em;
+  width: 75%;
 }
 
 .card .proyect-details a {
