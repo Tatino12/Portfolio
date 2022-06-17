@@ -183,14 +183,19 @@ font-size: 2.5em;
   padding: auto;
   margin-left: 25px;
   /* margin: auto;   */
-  /* display: flex;
-  justify-content: center;
-  flex-direction: row-reverse; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
 
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+ 
+
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; */
+  
 }
+
 
 
 
